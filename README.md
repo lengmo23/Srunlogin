@@ -11,6 +11,7 @@ References：https://blog.csdn.net/hackermengzhi/article/details/130499424
 ```
 python3 autologin.py
 ```
+line12\line13\line306需要修改
 
 可配合crontab执行autologin.sh检测掉线
 
