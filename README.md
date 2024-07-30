@@ -4,7 +4,7 @@
 
 References：https://blog.csdn.net/hackermengzhi/article/details/130499424
 
-
+2024.7月宿舍寝室网络结构升级，传统L2TP拨号上网还是可以使用，保证上网不中断，但是不认证的情况内网不互通、IPV6不通。因为认证系统会占用WIFI认证一个格位，多设备容易挤掉有线网的认证登录，如果使用OPENWRT,需要定期保活。可以配合crontab脚本，保证路由器不断网。
 
 使用方法
 
@@ -27,5 +27,4 @@ else
 fi
 
 ```
-
 
