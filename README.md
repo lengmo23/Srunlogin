@@ -12,15 +12,12 @@ References：https://blog.csdn.net/hackermengzhi/article/details/130499424
 python3 autologin.py
 ```
 
-可配合crontab执行检测掉线
+可配合crontab执行autologin.sh检测掉线
 
 ```
 IP="10.10.98.98"
-
-# 要执行的 Python 脚本路径
 PYTHON_SCRIPT="/root/autologin.py"
 
-# Ping 测试
 if ! ping -c 1 $IP > /dev/null 2>&1; then
     echo "IP $IP 不通，使用autologin.py脚本..."
     /usr/bin/python3 $PYTHON_SCRIPT
